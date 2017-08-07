@@ -1,0 +1,868 @@
+/*css reset*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, option {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+html, body {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Microsoft Yahei", Arial, "宋体";
+    font-size: 12px;
+    background: #dfeff4;
+}
+
+/* foot start */
+.footer {
+    line-height: 20px;
+    padding: 10px;
+    text-align: center;
+    color: #666;
+}
+
+/* foot end */
+
+ol, ul {
+    list-style: none
+}
+
+table {
+    border-collapse: collapse;
+}
+
+a {
+    text-decoration: none;
+}
+
+caption, th, td {
+    font-weight: normal
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: ''
+}
+
+blockquote, q {
+    quotes: "" ""
+}
+
+.vm {
+    vertical-align: middle;
+}
+
+.vt {
+    vertical-align: top;
+}
+
+input {
+    vertical-align: middle;
+    outline: none;
+    padding: 0;
+}
+
+input:disabled {
+    background-color: #fff;
+}
+
+.btn:disabled {
+    background-color: #437ecc;
+}
+
+textarea {
+    resize: none;
+    overflow: hidden;
+}
+
+img {
+    border: none 0;
+    vertical-align: middle;
+    outline: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.left {
+    text-align: left !important;
+}
+
+.center {
+    text-align: center !important;
+}
+
+.right {
+    text-align: right !important;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.pos-abs {
+    position: absolute;
+}
+
+.pos-fixed {
+    position: fixed;
+}
+
+.pos-static {
+    position: static;
+}
+
+.none {
+    display: none;
+}
+
+.clearfix:after {
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+    visibility: hidden;
+    line-height: 0;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.ellips {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.mod {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.h-auto {
+    height: auto !important;
+}
+
+.mod-900 {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.mr5 {
+    margin-right: 5px;
+}
+
+.mr8 {
+    margin-right: 8px;
+}
+
+.light {
+    color: #ff0000;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mr10 {
+    margin-right: 10px;
+}
+
+.ml15 {
+    margin-left: 15px;
+}
+
+.ml8 {
+    margin-left: 8px;
+}
+
+.mb5 {
+    margin-bottom: 5px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.mt5 {
+    margin-top: 5px;
+}
+
+.mb3 {
+    margin-bottom: 3px !important;
+}
+
+.white-bg {
+    background-color: #fff;
+}
+
+.col-5 {
+    width: 41.66666667%;
+}
+
+.col-05 {
+    float: left;
+    width: 4.16666667%;
+}
+
+.col-7 {
+    width: 58.33333333%;
+}
+
+.col-575 {
+    float: left;
+    width: 47.91%;
+}
+
+.item-line {
+    padding-top: 5px;
+    text-align: center;
+}
+
+/* datatables */
+.bottom {
+    line-height: 35px;
+    overflow: hidden;
+}
+
+div.bottom div.dataTables_info {
+    padding-top: 0 !important;
+    margin-left: 10px
+}
+
+div.bottom .paginate_button.next {
+    border-left: 0;
+}
+
+.dataTables_empty {
+    line-height: 36px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 4px 2px 4px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    box-sizing: border-box;
+}
+
+.btn {
+    width: 80px;
+    height: 34px;
+    background: #239cd6;
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    font-size: 12px;
+    font: normal 12px/34px "Microsoft YaHei";
+    cursor: pointer;
+}
+
+.table-row {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    background-color: #fff;
+    border-right: 1px solid #dfe6eb;
+    border-bottom: 1px solid #dfe6eb;
+    border-spacing: 0;
+}
+
+.table-row td {
+    text-align: center;
+}
+
+.table-row th {
+    /*border: 1px solid #ccc;*/
+    border-left: 1px solid #dfe6eb;
+    border-top: 1px solid #dfe6eb;
+    color: #333;
+    font-size: 14px;
+    font-weight: normal;
+    height: 40px;
+    background-color: #f3f7f9;
+    text-align: center;
+}
+
+.table-row td, .table-row th {
+    padding: 0 5px;
+}
+
+.table-row td {
+    /*padding: 0 5px;*/
+    height: 35px;
+    /*border: 1px solid #ccc;*/
+    border-left: 1px solid #dfe6eb;
+    border-top: 1px solid #dfe6eb;
+    text-align: center;
+    color: #666;
+    /*!*background-color: #fff;*!这行代码覆盖了tr的颜色*/
+}
+
+.table-row a {
+    margin-right: 5px;
+    margin-left: 5px;
+    color: #055798;
+}
+
+.light-gray {
+    color: #ccc;
+}
+
+.btn-reg {
+    width: 150px;
+    height: 44px;
+    font: normal 16px/44px "Microsoft YaHei";
+}
+
+.a-blue {
+    color: #07538f;
+    text-decoration: none;
+}
+
+.biz-top {
+    height: 80px;
+    background: #239cd6;
+}
+
+.biz-top .biz-logo {
+    float: left;
+    margin-top: 13px;
+    width: 600px;
+    height: 53px;
+    background: url(/img/biz/biz-logo.png) no-repeat;
+}
+
+.biz-top .nav-bar {
+    float: right;
+    margin-top: 28px;
+}
+
+.biz-top .nav-bar i {
+    display: inline-block;
+    background: url(/img/biz/biz-sprite.png) no-repeat;
+    vertical-align: middle;
+}
+
+.biz-top .nav-bar .icon-user {
+    width: 16px;
+    height: 16px;
+    background-position: 0 0;
+}
+
+.biz-top .nav-bar .icon-procedure {
+    width: 16px;
+    height: 14px;
+    background-position: 0 -32px;
+}
+
+.biz-top .nav-bar .icon-logout {
+    width: 21px;
+    height: 21px;
+    background-position: 0 -60px;
+}
+
+.biz-top .nav-bar .txt {
+    color: #bae7fc;
+}
+
+.biz-main .biz-title {
+    padding-left: 20px;
+    padding-top: 8px;
+    height: 42px;
+    line-height: 34px;
+    background: #f4f4f4;
+    border-radius: 5px 5px 0 0;
+    font-size: 26px;
+    color: #07538f;
+}
+
+.biz-main .biz-title .icon-user {
+    float: left;
+    background: url(/img/biz/biz-sprite.png) no-repeat 0 -98px;
+    width: 28px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+.biz-main .biz-title .icon-textbook {
+    float: left;
+    background: url(/img/biz/textbook-icon.png) no-repeat 0 4px;
+    width: 28px;
+    height: 34px;
+    margin-right: 8px;
+}
+
+.biz-main .icon-file {
+    float: left;
+    background: url(/img/biz/biz-sprite.png) no-repeat 0 -144px;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    margin-top: 3px;
+}
+
+.biz-content {
+    padding: 20px 0;
+    background: #fff;
+}
+
+.register-list li {
+    margin-bottom: 6px;
+}
+
+.register-list li > label {
+    display: inline-block;
+    width: 372px;
+    text-align: right;
+    font-size: 14px;
+    line-height: 28px;
+    vertical-align: top;
+}
+
+.register-list li label.error {
+    color: #ff6600;
+    width: 320px;
+    display: inline-block;
+    line-height: 18px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.register-list li.special label.error {
+    width: 100px;
+    margin-top: 7px;
+}
+
+.register-list li .info {
+    display: inline-block;
+    position: relative;
+}
+
+.register-list li .info .ipt-txt {
+    padding: 0 8px;
+    width: 214px;
+    height: 32px;
+    line-height: 28px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+}
+
+.register-list li .info .ipt-sel {
+    width: 232px;
+    padding: 6px 0;
+}
+
+.btnFile {
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 34px;
+}
+
+.file-name {
+    font-size: 14px;
+}
+
+.footer {
+    height: 73px;
+}
+
+.footer p {
+    padding-top: 15px;
+    text-align: center;
+    font: normal 12px/20px "Microsoft YaHei";
+    color: #666;
+}
+
+.cl-icon {
+    background: url("/img/biz/c-icon-sprite.png") no-repeat 0 0;
+}
+
+.contract-tp-box {
+    padding: 20px 30px 30px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.contract-tp-box li {
+    margin-bottom: 7px;
+}
+
+.contract-tp-box li label {
+    display: inline-block;
+    width: 174px;
+    text-align: right;
+    font-size: 14px;
+    line-height: 28px;
+    vertical-align: top;
+}
+
+.contract-tp-box li .info {
+    display: inline-block;
+}
+
+.contract-tp-box li .info .textarea {
+    padding: 0 8px;
+    width: 264px;
+}
+
+.contract-tp-box li .info .ipt-txt {
+    padding: 0 8px;
+    width: 100%;
+    height: 30px;
+    line-height: 28px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.contract-tp-box .ipt-sel {
+    width: 303px;
+    padding: 6px 0;
+    border: 1px solid #ccc;
+}
+
+.contract-tp-box h4 {
+    background-color: #f4f4f4;
+    color: #333333;
+    font: normal 14px/30px 'Microsoft YaHei';
+    padding: 0 10px;
+}
+
+.table-col-spread {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-col-spread td {
+    border: 1px solid #dfe6eb;
+    height: 34px;
+    font: normal 14px/16px 'Microsoft YaHei';
+    color: #333;
+    padding: 2px;
+}
+
+.table-col-spread td.title {
+    background-color: #f3f7f9;
+    padding-right: 7px;
+    width: 164px;
+    text-align: right;
+}
+
+.upload {
+    margin-top: 2px;
+    position: relative;
+}
+
+.upload a {
+    color: #07538f;
+    font-size: 12px;
+}
+
+.upload p {
+    background-color: #f4f4f4;
+    font: normal 14px/28px 'Microsoft YaHei';
+    margin-top: 2px;
+}
+
+.upload p i.cl-icon {
+    display: inline-block;
+    width: 27px;
+    height: 28px;
+    vertical-align: middle;
+    background-position: -46px -42px;
+}
+
+.c-login-bg {
+    background-color: #dfeff4;
+}
+
+.login-hd {
+    position: relative;
+    box-sizing: border-box;
+    height: 620px;
+}
+
+.login-hd-bg {
+    background-color: #239cd6;
+    height: 460px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.login-hd h3 {
+    padding-top: 150px;
+    position: relative;
+    z-index: 2;
+}
+
+.login-box {
+    position: relative;
+    top: 30px;
+    width: 692px;
+    height: 327px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.show-banner {
+    background: url("/img/biz/c-left-banner.png") no-repeat 0px 0px;
+    width: 270px;
+    height: 327px;
+    position: relative;
+}
+
+.show-banner h4 {
+    position: absolute;
+    top: 58px;
+    right: 22px;
+    font: normal 24px/28px 'Microsoft YaHei';
+    color: #fff;
+}
+
+.user-box {
+    padding: 64px 70px 0 69px;
+    border: 1px solid #bccace;
+    border-left: 0;
+    box-sizing: border-box;
+    width: 422px;
+    height: 327px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: left;
+}
+
+.user-box li {
+    margin-bottom: 5px;
+
+}
+
+.user-box .user, .user-box .pw, .user-box .yzm span {
+    border: 1px solid #ccc;
+    height: 38px;
+}
+
+.user-box li i {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    background: url("/img/biz/c-icon-sprite.png") no-repeat 0 0;
+    font-size: 0;
+    vertical-align: middle;
+}
+
+.user-box .pw i {
+    background-position: 0px -45px;
+}
+
+.user-box .pw input, .user-box .user input, .user-box .yzm input {
+    border: 0;
+    font: normal 12px/20px 'Microsoft YaHei';
+    padding: 0 7px;
+    width: 235px;
+    box-sizing: border-box;
+}
+
+#errorContainer {
+    color: #ff0000;
+    height: 14px;
+    font-size: 12px;
+    line-height: 14px;
+    margin: 0;
+}
+
+.yzm span input[type='text'] {
+    margin-top: 8px;
+    width: 149px;
+}
+
+.yzm img {
+    display: inline-block;
+    width: 74px;
+}
+
+.yzm a {
+    color: #02308d;
+    font: normal 12px/40px 'Microsoft YaHei';
+}
+
+.btn-login {
+    display: block;
+    background-color: #239cd6;
+    border-radius: 2px;
+    color: #fff;
+    font: normal 16px/40px 'Microsoft YaHei';
+    border: 0;
+    padding: 0;
+    width: 100%;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background-color: #1994cf;
+}
+
+.user-box .other a {
+    color: #07538f;
+    font: normal 14px/24px 'Microsoft YaHei';
+}
+
+.contract-mg-cont {
+    padding: 10px 20px 20px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.add-icon {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 30px;
+    height: 34px;
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+    border-left: none;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.add-icon i {
+    display: inline-block;
+    margin-top: 9px;
+    width: 14px;
+    height: 14px;
+    background: url(/img/biz/icons.png) -40px -137px;
+}
+
+.login-hd .links {
+    width: 692px;
+    margin: 30px auto 0;
+    text-align: center;
+    line-height: 56px;
+    border-bottom: 1px solid #c9dfe9;
+}
+
+.login-hd .links a {
+    margin-right: 20px;
+    font-size: 14px;
+    color: #07538f;
+}
+
+.login-hd .links a:hover {
+    color: #f60;
+}
+
+.login-hd .links i {
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: -2px;
+    background: url(/img/biz/login-icon.png) no-repeat;
+}
+
+.login-hd .links .legal-icon {
+    width: 13px;
+    height: 15px;
+    vertical-align: -3px;
+    background-position: 0 0;
+}
+
+.login-hd .links .process-icon {
+    width: 15px;
+    height: 13px;
+    background-position: 0 -33px;
+}
+
+.login-hd .links .guide-icon {
+    width: 13px;
+    height: 13px;
+    background-position: 0 -65px;
+}
+
+.login-hd .links .phone-icon {
+    width: 13px;
+    height: 13px;
+    background-position: 0 -90px;
+}
+
+.biz-main .biz-title .phone-icon {
+    float: left;
+    background: url(/img/biz/phone-icon.png) no-repeat 0 2px;
+    width: 33px;
+    height: 32px;
+    margin-right: 8px;
+}
+
+.biz-main .biz-title .process-icon {
+    float: left;
+    background: url(/img/biz/process-icon.png) no-repeat 0 2px;
+    width: 34px;
+    height: 34px;
+    margin-right: 8px;
+}
+
+.contract-mg-cont .title {
+    font-size: 18px;
+    color: #07538f;
+}
+
+.system-flowchart {
+    margin: 36px auto 70px;
+    width: 627px;
+    height: 370px;
+    background: url(/img/biz/system-flowchart.png) no-repeat;
+}
